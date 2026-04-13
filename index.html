@@ -3,59 +3,209 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Homepage</title>
+  <title>中村自動車整備工場 | 確かな技術と安心のサービス</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
+
+  <!-- ヘッダー -->
   <header>
     <nav>
-      <div class="logo">My Homepage</div>
+      <div class="logo">
+        <i class="fas fa-wrench"></i> 中村自動車整備工場
+      </div>
       <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#works">Works</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#services">サービス</a></li>
+        <li><a href="#features">選ばれる理由</a></li>
+        <li><a href="#flow">ご利用の流れ</a></li>
+        <li><a href="#contact">お問い合わせ</a></li>
       </ul>
+      <a href="tel:000-0000-0000" class="tel-btn"><i class="fas fa-phone"></i> 000-0000-0000</a>
     </nav>
   </header>
 
-  <main>
-    <section class="hero">
-      <h1>Welcome to My Homepage</h1>
-      <p>はじめまして。このページはポートフォリオ兼ホームページです。</p>
-    </section>
+  <!-- ヒーロー -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h1>あなたの愛車を、<br>プロの技術で守ります。</h1>
+      <p>車検・一般整備・板金塗装まで<br>ワンストップでお任せください</p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">無料相談・お見積り</a>
+        <a href="#services" class="btn btn-outline">サービス一覧</a>
+      </div>
+    </div>
+  </section>
 
-    <section id="about">
-      <h2>About</h2>
-      <p>自己紹介やプロフィールをここに書きます。</p>
-    </section>
+  <!-- お知らせバー -->
+  <div class="notice-bar">
+    <i class="fas fa-bullhorn"></i>
+    <span>【キャンペーン】6月末まで！エンジンオイル交換 <strong>工賃無料</strong>実施中</span>
+  </div>
 
-    <section id="works">
-      <h2>Works</h2>
-      <div class="works-grid">
-        <div class="work-card">
-          <h3>プロジェクト 1</h3>
-          <p>プロジェクトの説明をここに書きます。</p>
+  <!-- サービス -->
+  <section id="services">
+    <div class="container">
+      <h2 class="section-title">サービス一覧</h2>
+      <p class="section-sub">お車に関するお悩みはすべてお任せください</p>
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-clipboard-check"></i></div>
+          <h3>車検</h3>
+          <p>国家資格を持つ整備士が丁寧に点検。法定費用込みのわかりやすい明朗会計です。</p>
+          <span class="price">軽自動車 ¥39,800〜</span>
         </div>
-        <div class="work-card">
-          <h3>プロジェクト 2</h3>
-          <p>プロジェクトの説明をここに書きます。</p>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-oil-can"></i></div>
+          <h3>エンジンオイル交換</h3>
+          <p>エンジンの寿命を延ばす定期交換。お車の種類に合った最適なオイルをご提案します。</p>
+          <span class="price">¥3,300〜</span>
         </div>
-        <div class="work-card">
-          <h3>プロジェクト 3</h3>
-          <p>プロジェクトの説明をここに書きます。</p>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-circle-dot"></i></div>
+          <h3>タイヤ交換・組み換え</h3>
+          <p>季節に合わせたタイヤ交換、バランス調整もお任せ。保管サービスも対応しています。</p>
+          <span class="price">¥2,200〜 / 本</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-car-burst"></i></div>
+          <h3>板金・塗装</h3>
+          <p>小さなキズ・へこみから大きな事故修理まで。保険対応の修理もご相談ください。</p>
+          <span class="price">お見積り無料</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-snowflake"></i></div>
+          <h3>エアコン修理・ガス補充</h3>
+          <p>冷えが悪い・臭いが気になるなど、カーエアコンのトラブルに迅速対応します。</p>
+          <span class="price">¥5,500〜</span>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon"><i class="fas fa-battery-full"></i></div>
+          <h3>バッテリー交換</h3>
+          <p>突然のエンジン不動を防ぐバッテリー点検・交換。廃バッテリーの引き取りも無料です。</p>
+          <span class="price">¥8,800〜</span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- 選ばれる理由 -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <h2 class="section-title">選ばれる理由</h2>
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-num">01</div>
+          <h3>国家資格整備士が対応</h3>
+          <p>すべての整備は国家資格を持つ整備士が担当。確かな技術で安心をお届けします。</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">02</div>
+          <h3>明朗会計・事前お見積り</h3>
+          <p>作業前に必ずお見積りをご提示。追加費用が発生する場合も事前にご相談します。</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">03</div>
+          <h3>最短即日対応</h3>
+          <p>部品在庫が豊富で、多くの整備を最短即日で対応可能。お急ぎの方もご相談ください。</p>
+        </div>
+        <div class="feature-item">
+          <div class="feature-num">04</div>
+          <h3>代車無料貸し出し</h3>
+          <p>整備中のお車の代わりに、代車を無料でご用意しています（要事前予約）。</p>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>お問い合わせはこちらから。</p>
-      <a href="mailto:kyouhei.nakamura8611@gmail.com" class="btn">メールを送る</a>
-    </section>
-  </main>
+  <!-- ご利用の流れ -->
+  <section id="flow">
+    <div class="container">
+      <h2 class="section-title">ご利用の流れ</h2>
+      <div class="flow-steps">
+        <div class="flow-step">
+          <div class="flow-icon"><i class="fas fa-phone"></i></div>
+          <div class="flow-num">STEP 1</div>
+          <h3>お問い合わせ</h3>
+          <p>お電話またはフォームからお気軽にご連絡ください。</p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="flow-step">
+          <div class="flow-icon"><i class="fas fa-magnifying-glass"></i></div>
+          <div class="flow-num">STEP 2</div>
+          <h3>お見積り・点検</h3>
+          <p>お車の状態を確認し、作業内容・費用をご説明します。</p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="flow-step">
+          <div class="flow-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+          <div class="flow-num">STEP 3</div>
+          <h3>整備・修理</h3>
+          <p>ご承認いただいた後、丁寧に作業いたします。</p>
+        </div>
+        <div class="flow-arrow"><i class="fas fa-chevron-right"></i></div>
+        <div class="flow-step">
+          <div class="flow-icon"><i class="fas fa-car"></i></div>
+          <div class="flow-num">STEP 4</div>
+          <h3>納車</h3>
+          <p>作業完了後、内容をご説明してお返しします。</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- お問い合わせ -->
+  <section id="contact" class="contact-section">
+    <div class="container">
+      <h2 class="section-title">お問い合わせ</h2>
+      <div class="contact-wrap">
+        <div class="contact-info">
+          <h3>中村自動車整備工場</h3>
+          <ul>
+            <li><i class="fas fa-location-dot"></i> 〒000-0000 ○○県○○市○○町1-2-3</li>
+            <li><i class="fas fa-phone"></i> 000-0000-0000</li>
+            <li><i class="fas fa-clock"></i> 営業時間：8:00〜18:00（日・祝定休）</li>
+            <li><i class="fas fa-envelope"></i> kyouhei.nakamura8611@gmail.com</li>
+          </ul>
+          <div class="map-placeholder">
+            <i class="fas fa-map-location-dot"></i>
+            <p>Googleマップをここに埋め込み予定</p>
+          </div>
+        </div>
+        <form class="contact-form">
+          <div class="form-group">
+            <label>お名前 <span>*</span></label>
+            <input type="text" placeholder="山田 太郎">
+          </div>
+          <div class="form-group">
+            <label>電話番号</label>
+            <input type="tel" placeholder="090-0000-0000">
+          </div>
+          <div class="form-group">
+            <label>メールアドレス <span>*</span></label>
+            <input type="email" placeholder="example@email.com">
+          </div>
+          <div class="form-group">
+            <label>お問い合わせ内容 <span>*</span></label>
+            <textarea rows="5" placeholder="車種・症状・ご希望のサービスなどをご記入ください"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">送信する</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- フッター -->
   <footer>
-    <p>&copy; 2026 My Homepage. All rights reserved.</p>
+    <p>&copy; 2026 中村自動車整備工場. All rights reserved.</p>
   </footer>
+
 </body>
 </html>
